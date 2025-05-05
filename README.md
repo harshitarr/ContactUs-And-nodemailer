@@ -13,7 +13,13 @@ This is a **responsive contact form** built using **Next.js**, styled with **Tai
 
 ## 📸 Demo
 
-![Demo Screenshot](./public/demo-screenshot.png) <!-- Replace with your screenshot path -->
+**UI Screenshot**  
+![UI](https://github.com/harshitarr/ContactUs-And-nodemailer/blob/main/public/assets/gitscreenshot1.png?raw=true)
+
+**Mail Screenshot**  
+![Mail](https://github.com/harshitarr/ContactUs-And-nodemailer/blob/main/public/assets/gitscreenshot2.png?raw=true)
+
+
 
 ## 🚀 Technologies Used
 
