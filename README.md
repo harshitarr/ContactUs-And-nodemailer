@@ -46,12 +46,12 @@ git clone https://github.com/harshitarr/ContactUs-And-nodemailer.git
 cd ContactUs-And-nodemailer
 ```
 
-##Install dependencies
+## Install dependencies
 ```bash
 npm install
 ```
 
-##Configure environment variables
+## Configure environment variables
 - Create a .env.local file in the root and add:
 ```bash
 EMAIL_USER=your_email@gmail.com
@@ -59,25 +59,25 @@ EMAIL_PASS=your_app_password
 EMAIL_TO=receiver_email@gmail.com
 ```
 
-##Run the development server
+## Run the development server
 ```bash
 npm run dev
 ```
 
-##📧 Email Sending Logic
+## 📧 Email Sending Logic
 - Uses Nodemailer to send email via Gmail SMTP
 - SMTP credentials are loaded from .env.local
 - Sends form data (name, company, contact, etc.) in the email body
 
-##🛡️ Security Notes
+## 🛡️ Security Notes
 - Never commit .env.local to GitHub.
 - Use App Passwords for Gmail (2FA must be enabled).
 - This project is for learning/demo purposes. In production, consider rate-limiting or CAPTCHA.
 
 
-##🤝 Contribution
+## 🤝 Contribution
 - Feel free to fork this repository and contribute by submitting a pull request.
 
-##Developed with 💙 by Harshita
+## Developed with 💙 by Harshita
 
 
