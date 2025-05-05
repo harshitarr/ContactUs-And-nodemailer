@@ -1,37 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# 📬 Contact Form with Email Functionality (Next.js + Nodemailer)
 
-First, run the development server:
+This is a **responsive contact form** built using **Next.js**, styled with **Tailwind CSS**, and integrated with **Nodemailer** to send form submissions directly to an admin email address.
+
+## ✨ Features
+
+- Beautiful UI with responsive design
+- Real-time form validation
+- Error handling
+- Sends form data to admin via email
+- Uses environment variables for secure credential handling
+
+## 📸 Demo
+
+![Demo Screenshot](./public/demo-screenshot.png) <!-- Replace with your screenshot path -->
+
+## 🚀 Technologies Used
+
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- Nodemailer
+- Environment Variables (`.env.local`)
+
+## 📁 Folder Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+project-root/
+├── app/
+│ ├── components/
+│ │ └── ContactUs.jsx
+│ └── api/
+│ └── sendMail/route.js
+├── public/
+│ └── assets/
+│ └── contact-image3.svg
+├── .env.local
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ **Clone the repository**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+git clone https://github.com/harshitarr/ContactUs-And-nodemailer.git
+cd ContactUs-And-nodemailer
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+##Install dependencies
+```bash
+npm install
+```
 
-## Learn More
+##Configure environment variables
+- Create a .env.local file in the root and add:
+```bash
+EMAIL_USER=your_email@gmail.com
+EMAIL_PASS=your_app_password
+EMAIL_TO=receiver_email@gmail.com
+```
 
-To learn more about Next.js, take a look at the following resources:
+##Run the development server
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+##📧 Email Sending Logic
+- Uses Nodemailer to send email via Gmail SMTP
+- SMTP credentials are loaded from .env.local
+- Sends form data (name, company, contact, etc.) in the email body
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+##🛡️ Security Notes
+- Never commit .env.local to GitHub.
+- Use App Passwords for Gmail (2FA must be enabled).
+- This project is for learning/demo purposes. In production, consider rate-limiting or CAPTCHA.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+##🤝 Contribution
+- Feel free to fork this repository and contribute by submitting a pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# ContactUs-And-nodemailer" 
+##Developed with 💙 by Harshita
+
+
